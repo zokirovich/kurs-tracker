@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kun tartibi va Kurs Nazorati</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="eyebrow">kun tartibi + kurs nazorati</div>
+      <h1>10 kunlik o'quv reja</h1>
+      <p>Har darsga qiyinlik darajasi belgilangan, har 3 kundan keyin zaxira (takrorlash) kuni bor &mdash; tez o'rgansangiz oldinga o'tasiz, qiyin joy bo'lsa shu kunda qaytib ko'rasiz.</p>
+    </header>
+
+    <div class="legend">
+      <span><i style="background:var(--accent)"></i>Oson</span>
+      <span><i style="background:var(--amber)"></i>O'rta</span>
+      <span><i style="background:var(--red)"></i>Qiyin</span>
+      <span><i style="background:var(--buffer)"></i>Zaxira kun</span>
+    </div>
+
+    <div class="progress-block">
+      <div class="progress-top">
+        <div class="big-num" id="pct">0%<span>bajarildi</span></div>
+        <div class="progress-stats">
+          <strong id="doneCount">0</strong> / <span id="totalCount">27</span> dars &middot;
+          <strong id="watchedTime">0:00</strong> / <span id="totalTime">0:00</span>
+        </div>
+      </div>
+      <div class="bar-track"><div class="bar-fill" id="barFill"></div></div>
+    </div>
+
+    <div class="day-tabs" id="dayTabs"></div>
+    <div id="dayPanels"></div>
+
+    <div style="text-align:center;">
+      <button class="reset-btn" id="resetBtn">Belgilarni tozalash</button>
+    </div>
+    <div class="footer-note">ma'lumotlar shu qurilmada, shu brauzerda saqlanadi</div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
